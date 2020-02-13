@@ -13,15 +13,5 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-- script: |
-az aks create \
-    --resource-group myResourceGroup \
-    --name myAKSCluster \
-    --vm-set-type VirtualMachineScaleSets \
-    --node-count 2 \
-    --generate-ssh-keys \
-    --kubernetes-version 1.15.7 \
-    --load-balancer-sku standard
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
+- script: az aks create --resource-group myResourceGroup --name myAKSCluster --vm-set-type VirtualMachineScaleSets --node-count 2 --generate-ssh-keys --kubernetes-version 1.15.7 --load-balancer-sku standard
   displayName: 'Run a multi-line script'
