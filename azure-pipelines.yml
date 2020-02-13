@@ -13,6 +13,6 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-- script: az login -u vkvamsikonijeti@outlook.com -p Work42ls;
+- script: az login --service-principal --username  2717f415-efcf-4b60-a5f0-9f63e7ecf271 --tenant ca0d63a3-6869-4384-b09d-0a191dd04229 --password /Users/vamsikrishna.k/tmpgz423_2k.pem;
           az aks create --resource-group myResourceGroup --name myAKSCluster --vm-set-type VirtualMachineScaleSets --node-count 2 --generate-ssh-keys --kubernetes-version 1.15.7 --load-balancer-sku standard
   displayName: 'Run a multi-line script'
