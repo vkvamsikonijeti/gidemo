@@ -13,7 +13,6 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-- script: 
-az login
+- script: az login
 az aks create --resource-group myResourceGroup --name myAKSCluster --vm-set-type VirtualMachineScaleSets --node-count 2 --generate-ssh-keys --kubernetes-version 1.15.7 --load-balancer-sku standard
   displayName: 'Run a multi-line script'
